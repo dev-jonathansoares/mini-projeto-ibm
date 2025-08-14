@@ -29,18 +29,19 @@ pipeline {
         }
     }
 
+        stage('Deploy OpenShift') {
+            steps {
+                echo '🚀 Fazendo deploy no OpenShift...'
+                sh 'oc apply -f openshift/deployment.yaml'
+                sh 'oc apply -f openshift/service.yaml'
+                sh 'oc apply -f openshift/route.yaml'
+            }
+        }
+    }
+
     post {
         always {
             echo 'Pipeline finalizada.'
         }
     }
 }
-
-    stage('Deploy OpenShift') {
-        steps {
-            echo "🚀 Fazendo deploy no OpenShift..."
-            sh 'oc apply -f openshift/deployment.yaml'
-            sh 'oc apply -f openshift/service.yaml'
-            sh 'oc apply -f openshift/route.yaml'
-        }
-    }
