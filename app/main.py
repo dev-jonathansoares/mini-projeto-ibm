@@ -4,4 +4,6 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "API ativa - Pipeline OK"}
+    return {"message": "Nova versão em produção"}
+
+Instrumentator().instrument(app).expose(app)

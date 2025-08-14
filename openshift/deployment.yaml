@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fastapi-app
+      app: fastapi
   template:
     metadata:
       labels:
-        app: fastapi-app
+        app: fastapi
     spec:
       containers:
         - name: fastapi
-          image: devjonathanssoares/ibm-crud-api:latest
+          image: fastapi-sample:latest
           ports:
             - containerPort: 8000

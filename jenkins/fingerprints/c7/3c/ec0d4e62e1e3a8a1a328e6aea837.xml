@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-08-14 04:32:07.891 UTC</timestamp>
+  <md5sum>c73cec0d4e62e1e3a8a1a328e6aea837</md5sum>
+  <fileName>Credential id=github-token name=dev-jonathansoares/****** (GitHub token para projeto IBM)</fileName>
+  <usages>
+    <entry>
+      <string>fastapi-pipeline</string>
+      <ranges>2</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1419.v2337d1ceceef">
+      <timestamp>1755145927879</timestamp>
+      <itemFullName>fastapi-pipeline</itemFullName>
+      <timestamp0>1755145927879</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

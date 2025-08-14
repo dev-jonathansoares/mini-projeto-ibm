@@ -7,6 +7,5 @@ spec:
     kind: Service
     name: fastapi-service
   port:
-    targetPort: 8000
-  tls:
-    termination: edge
+    targetPort: 80
+    
