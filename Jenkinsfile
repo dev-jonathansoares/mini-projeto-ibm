@@ -27,7 +27,6 @@ pipeline {
                 sh 'docker run -d -p 8000:8000 --name app_instance $IMAGE_NAME'
             }
         }
-    }
 
         stage('Deploy OpenShift') {
             steps {
