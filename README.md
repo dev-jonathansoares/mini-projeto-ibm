@@ -1,6 +1,6 @@
-# 🌐 Ultimate DevOps Platform
+# Mini  Projeto IBM
 
-Este é um projeto completo para demonstrar habilidades DevOps em:
+Esse projeto conciste em:
 
 - CI/CD com Jenkins
 - Monitoramento com Prometheus e Grafana
@@ -9,34 +9,34 @@ Este é um projeto completo para demonstrar habilidades DevOps em:
 - GitHub Actions para automação
 - App de exemplo em FastAPI
 
-## 🐳 Subindo o ambiente
+## Subindo o ambiente:
 
 ```bash
 docker-compose up -d
 ```
 
-- Jenkins: http://localhost:8080
+- Jenkins: http://localhost:8090
 - Prometheus: http://localhost:9090
 - Grafana: http://localhost:3000
 
-## 🔐 Acessar Jenkins
+## Acessar Jenkins
 
 ```bash
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-## ☁️ OpenShift Deploy
+## OpenShift Deploy
 
 ```bash
 oc new-project devops-api
 oc apply -f openshift/
 ```
 
-## 📈 Monitoramento
+## Monitoramento
 
 Prometheus já configurado para coletar métricas do FastAPI.
 
-## ⚙️ Terraform
+## Terraform
 
 ```bash
 cd terraform
@@ -44,8 +44,7 @@ terraform init
 terraform apply
 ```
 
-## 🧠 GitHub Actions
+## GitHub Actions
 
 Veja `.github/workflows/terraform.yml`
 
-## ✅ Pronto para entrevista técnica!
